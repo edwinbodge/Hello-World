@@ -2,13 +2,23 @@
 <html>
     <head>
         <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-        <title>About Me</title>
+        <title>Ultimate Text Challenge</title>
     </head>
     <body>
-        <img src="http://bit.ly/NnVbxt"/>
-        <p>We're Codecademy! We're here to help you learn to code.</p><br/><br/>
+        <p id="intro">Cascading with CSS</p>
         <div>
-            <a href="http://www.codecademy.com">Friends us on <span>Facebook</span>!</a>
+            <p>When you set a property of a selector like 'p' to a certain value, that value applies to <em>all</em> p tags.
+            If, however, you change that same property to a different value for a more specific instance of p,
+            that change will <em>override</em> the 'general rule'.
+            </p>
+            <ul>
+                <li><p>If you say p { font-family: Garamond}, all 'p's will have the font Garamond.</p></li>
+                <li><p class="list_item">BUT if you say li p {font-family: Verdana}, 'p's outside of 'li's will be
+                       in Garamond, and 'p's INSIDE 'li's will be in Verdana.
+                </p></li>
+                <li><p class="list_item">The more specific your selectors are, the higher importance CSS gives to the styling you apply!</p></li>
+            </ul>
         </div>
+        <p id="summary">Greater specificity makes CSS prioritize that particular styling.</p>
     </body>
 </html>
