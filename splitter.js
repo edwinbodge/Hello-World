@@ -9,3 +9,8 @@ function convert() {
 	}
 	$("#output").val(out);
 }
+
+function display() {
+	var myinput = $("#input").val();
+	$("#output").val(myinput);
+}
