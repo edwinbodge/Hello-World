@@ -16,12 +16,11 @@
 <script>
 function myFunction() {
     var x = document.getElementById("frm1");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
-    }
-    document.getElementById("demo").innerHTML = "hello world";
+    var myword1 = x.elements[0].value;
+    var myword2 = x.elements[1].value;
+    document.getElementById("demo").innerHTML = myword1;
+    document.getElementById("demo").innerHTML = myword2;
+
 }
 </script>
 
