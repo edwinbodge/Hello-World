@@ -1,15 +1,11 @@
-h3 {
-    color: red;
-}
-
 h1 {
-    color: blue;
+    font-family: Verdana;
 }
 
-p {
+h3 {
     font-family: Courier;
 }
 
-span {
-    background-color: yellow;
+p {
+    color: purple;
 }
