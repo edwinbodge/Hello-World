@@ -4,8 +4,8 @@ function checkAnagram() {
     var word2 = x.elements[1].value;
     var sortedWord1 = sortMyString(word1);
     var sortedWord2 = sortMyString(word2);
-    var answer = sortedWord1 === sortedWord2;
-    document.getElementById("demo1").innerHTML = answer;
+//    var answer = sortedWord1 === sortedWord2;
+    document.getElementById("demo1").innerHTML = (sortedWord1 === sortedWord2);
 }
 
 function sortMyString(str) {
