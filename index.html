@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<link href="bootstrap.min.css" rel="stylesheet">
-	<script src="splitter.js"></script>
-
-
-</head>
-
+<html>
 <body>
+	
+<form id="frm1" action="form_action.asp">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form>
 
-	
-	<div>
-		<label for="input">Input:</label>
-		<textarea id="input"></textarea>
-		<button type="button" onclick="display()">Split</button>
-	</div>
-	<div>
-		<label for="output">Output:</label>
-		<textarea id="output"></textarea>
-	</div>
-	
-	<script src="jquery.js"> </script> 
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
 </body>
-
 </html>
