@@ -11,7 +11,7 @@ function checkAnagram() {
     var word1 = x.elements[0].value;
     var word2 = x.elements[1].value;
     // var regex = /[^a-z0-9]/gi;
-    var sortedWord1 = function sortMyString(word1);
+    var sortedWord1 = sortMyString(word1);
     var sortedWord2 = sortMyString(word2);
     var answer = sortedWord1 === sortedWord2;
     document.getElementById("demo1").innerHTML = "Something happened!";
