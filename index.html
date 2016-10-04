@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>abc</title>
-    <script type="text/javascript">
-function  changeSrc() {
-   document.getElementById("theImage").setAttribute("src",'http://XXXXX.com/api/qr?d='+ document.getElementById("url").value)
-   }
-    </script>
-</head>
-<body>
-    <div id="container">
-<input id="url" type="text" maxlength="50" style="width:100%" value="http://" name="websiteurl" />
-<input name="ChangeImage" onClick="changeSrc()" value="Change Image" type="button">
+<html lang="en">
 
-<img id="theImage" src="">
-    </div><!-- #container -->
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/splitter.js"></script>
+
+
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="form-group col-md-6">
+				<label for="input">Input:</label>
+				<textarea class="form-control" rows="20" id="input"></textarea>
+				<button type="button" class="btn btn-primary btn-lg" onclick="convert()">Split</button>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="output">Output:</label>
+				<textarea class="form-control" rows="20" id="output"></textarea>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery.js"> </script>
 </body>
+
 </html>
