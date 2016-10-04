@@ -1,11 +1,8 @@
-h1 {
-    font-family: Verdana;
+td {
+    height: 50px;
+    border: 1px dashed blue;
 }
 
-h3 {
-    font-family: Courier;
-}
-
-p {
-    color: purple;
+table { 
+    border: 1px solid black
 }
